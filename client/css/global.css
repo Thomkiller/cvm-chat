@@ -2,3 +2,54 @@
     margin:0;
     padding:0;
 }
+
+.background-index{
+    background-image: url("/client/img/NewYork.jpg");
+    background-size: 900px 950px;
+}
+
+.sign-in-input-group{
+    border: black solid 2px;
+    border-radius: 50px;
+    position: absolute;
+    top : 25vh;
+    left: 35vw;
+    height: 400px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+}
+
+.question-container{
+    display: flex;
+    text-align: center;
+    padding-top: 30%;
+    margin-left: 20%;
+    font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+    font-weight: bold;
+    font-size: larger;
+    color: red;
+}
+.question-container-2{
+    display: flex;
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 20%;
+    font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+    font-weight: bold;
+    font-size: larger;
+    color: red;
+}
+
+.Password{
+    padding-right: 5px ;
+}
+
+.username-question{
+    padding-right: 5px
+}
+ 
+#name{
+    text-align: left;
+}
