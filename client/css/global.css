@@ -5,7 +5,7 @@
 
 .background-index{
     background-image: url("/client/img/NewYork.jpg");
-    background-size: 900px 950px;
+    background-size: 100vw 100vh;
 }
 
 .sign-in-input-group{
@@ -52,4 +52,10 @@
  
 #name{
     text-align: left;
+}
+
+.connexion{
+    margin-top: 10%;
+    width: 300px;
+    height: 50px;
 }
