@@ -154,6 +154,15 @@ padding-right: 40px;
 
 .homme{
     font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+    font-size: larger;
+    font-weight: bold;
+    position: absolute;
+    top: 400px;
+    left: 850px;
+    background-color: sandybrown;
+    padding: 20px;
+    border-radius: 40px;
+    border: black 4px solid;
 }
 
 .bouton-enr{
@@ -196,4 +205,14 @@ padding-right: 40px;
     color: white;
 padding-bottom: 10%;
 
+}
+
+#helico{
+    position: absolute;
+    height: 100px;
+}
+
+#firetruck{
+    position: absolute;
+    height: 125px;
 }

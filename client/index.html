@@ -37,25 +37,7 @@
     <script>
 
         let destroyedbuilding = 0;
-        const fire = () => {
-            console.log("here")
-            let node1 = document.createElement("img")
-            node1.src = "/client/img/Explosion.png"
-            node1.setAttribute("id", "fire")
-            let parentNode = document.querySelector("#background")
-            parentNode.append(node1)
-            
-            document.querySelector("#fire").style.top = ((Math.random() * 100)+500) + "px"
-            document.querySelector("#fire").style.left = (Math.random()* 500) + "px"
-            document.querySelector("#fire").style.height = ((Math.random()* 70)+40) +"px"
-            console.log(document.querySelector("#fire").style.top)
-        }
-        document.querySelector("#background").addEventListener("click", () => {
-            console.log("youppi")
-            requestAnimationFrame(fire, 1000)
-            destroyedbuilding++;
-        })
-
+    
 
         document.querySelector("#deadpool").addEventListener("mouseover", () => {
         let node = document.createElement("div")
