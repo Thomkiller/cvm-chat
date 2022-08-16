@@ -13,7 +13,7 @@
 <body class="background-index" id="background">
 
     <div  id="destroy" class="destroy">Clique pour détruire les bâtiments</div>
-
+ 
     <form class="form" action="" method="post" autocomplete="off">
 
         <div class="sign-in-input-group">
@@ -29,9 +29,10 @@
                 <input type="password" id="password" name="password" placeholder="Mot de passe" required>
             </div>
             <button class="connexion">Connexion</button>
+            <a class="enregistrer" href="register.html">S'enregistrer</a>
         </div>
     </form>
-    <a class="enregistrer" href="register.html">S'enregistrer</a>
+    
 
     <script>
 
@@ -58,10 +59,10 @@
 
         document.querySelector("#deadpool").addEventListener("mouseover", () => {
         let node = document.createElement("div")
-        let parentNode = document.querySelector("#background")
+        let parentNode = document.querySelector(".sign-in-input-group")
         node.setAttribute("id", "msg")
-        node.innerText = "Welcome to Deadpool Chat"
-        parentNode.append(node);
+        node.innerText = "Bienvenue sur le chat de Deadpool! \n Entrez votre mot de passe et nom d'utilisateur"
+        parentNode.prepend(node);
         })
 
         document.querySelector("#deadpool").addEventListener("mouseout", () => {

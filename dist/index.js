@@ -20,16 +20,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./client/src/explosion.js":
-/*!*********************************!*\
-  !*** ./client/src/explosion.js ***!
-  \*********************************/
-/***/ (() => {
-
-eval("class explosion{\r\n\r\n    constructor(id){\r\n    this.node = document.querySelector(\"#\" + id)\r\n    this.x = Math.random()*700\r\n    this.y = Math.random()*700\r\n    \r\n\r\n    }\r\n\r\n\r\n}\n\n//# sourceURL=webpack://chat/./client/src/explosion.js?");
-
-/***/ }),
-
 /***/ "./client/src/page-index.js":
 /*!**********************************!*\
   !*** ./client/src/page-index.js ***!
@@ -37,7 +27,7 @@ eval("class explosion{\r\n\r\n    constructor(id){\r\n    this.node = document.q
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _chat_api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./chat-api */ \"./client/src/chat-api.js\");\n/* harmony import */ var _explosion_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./explosion.js */ \"./client/src/explosion.js\");\n/* harmony import */ var _explosion_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_explosion_js__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\r\nconsole.log(\"lol\")\r\n\r\nwindow.addEventListener(\"load\", () => {\r\n    document.querySelector(\"form\").onsubmit = function () {\r\n        return (0,_chat_api__WEBPACK_IMPORTED_MODULE_0__.signin)(this);\r\n    }\r\n\r\n   \r\n\r\n});\r\n// let Deadpool = document.getElementById(\"deadpool\")\r\n// console.log(Deadpool)\r\n// Deadpool.addEventListener(\"click\", () => {\r\n//     let node = document.createElement(\"div\")\r\n//     let parentNode = document.querySelector(\"#background\")\r\n//     node.setAttribute(\"id\", \"msg\")\r\n//     node.innerText = \"Welcome to Deadpool Chat\"\r\n//     parentNode.append(node);\r\n//     })\r\n\r\nconst fire = () => {\r\n    let node1 = document.createElement(\"div\")\r\n    node1.id.add(\"fire\")\r\n    let parentNode = document.querySelector(\"#background\")\r\n    parentNode.append(node1)\r\n}\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://chat/./client/src/page-index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _chat_api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./chat-api */ \"./client/src/chat-api.js\");\n\r\n\r\nconsole.log(\"lol\")\r\n\r\nwindow.addEventListener(\"load\", () => {\r\n    document.querySelector(\"form\").onsubmit = function () {\r\n        return (0,_chat_api__WEBPACK_IMPORTED_MODULE_0__.signin)(this);\r\n    }\r\n\r\n   \r\n\r\n});\r\n// let Deadpool = document.getElementById(\"deadpool\")\r\n// console.log(Deadpool)\r\n// Deadpool.addEventListener(\"click\", () => {\r\n//     let node = document.createElement(\"div\")\r\n//     let parentNode = document.querySelector(\"#background\")\r\n//     node.setAttribute(\"id\", \"msg\")\r\n//     node.innerText = \"Welcome to Deadpool Chat\"\r\n//     parentNode.append(node);\r\n//     })\r\n\r\nconst fire = () => {\r\n    let node1 = document.createElement(\"div\")\r\n    node1.id.add(\"fire\")\r\n    let parentNode = document.querySelector(\"#background\")\r\n    parentNode.append(node1)\r\n}\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://chat/./client/src/page-index.js?");
 
 /***/ }),
 

@@ -1,5 +1,4 @@
 import {signin} from './chat-api';
-import explosion from "./explosion.js"
 
 console.log("lol")
 
