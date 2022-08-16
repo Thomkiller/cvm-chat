@@ -141,7 +141,9 @@ class Firetruck {
         let node = document.querySelector("#firetruck")
         node.style.left = this.distance + "px"
 
-        if()
+        if(this.distance == 200){
+            this.speed = 0
+        }
         
 
     }
