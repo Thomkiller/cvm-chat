@@ -5,31 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <script src="dist/index.js"></script>
+    <script src="/dist/index.js"></script>
     <link rel="stylesheet" href="css/global.css">
     <link rel="icon" href="img/favicon.png" type="image/png" />
 </head>
 
-<body class="background-index">
+<body class="background-index" id="background">
 
-    <form action="" method="post" autocomplete="off">
-        
+    <div  id="destroy" class="destroy">Clique pour détruire les bâtiments</div>
+
+    <form class="form" action="" method="post" autocomplete="off">
+
         <div class="sign-in-input-group">
             <div id="api-message"></div>
-            <img src="/client/img/Deadpoolindex.jpg" alt="deadpool">
+            <img id="deadpool" src="/client/img/deadpool3.png" alt="deadpool">
             <div class=question-container>
-                <div class="username-question">Username : </div>
+                <div class="username-question">Nom d'usager : </div>
                 <input type="text" id="name" name="username" placeholder="Nom d'usager" required>
             </div>
 
-            <div  class=question-container-2>
-                <div class="Password ">Password : </div>
+            <div class=question-container-2>
+                <div class="Password ">Mot de passe : </div>
                 <input type="password" id="password" name="password" placeholder="Mot de passe" required>
             </div>
             <button class="connexion">Connexion</button>
         </div>
     </form>
-    <a href="register.html">S'enregistrer</a>
+    <a class="enregistrer" href="register.html">S'enregistrer</a>
+
+    <script>
+
+        let destroyedbuilding = 0;
+        const fire = () => {
+            console.log("here")
+            let node1 = document.createElement("img")
+            node1.src = "/client/img/Explosion.png"
+            node1.setAttribute("id", "fire")
+            let parentNode = document.querySelector("#background")
+            parentNode.append(node1)
+            
+            document.querySelector("#fire").style.top = ((Math.random() * 100)+500) + "px"
+            document.querySelector("#fire").style.left = (Math.random()* 500) + "px"
+            document.querySelector("#fire").style.height = ((Math.random()* 70)+40) +"px"
+            console.log(document.querySelector("#fire").style.top)
+        }
+        document.querySelector("#background").addEventListener("click", () => {
+            console.log("youppi")
+            requestAnimationFrame(fire, 1000)
+            destroyedbuilding++;
+        })
+
+
+        document.querySelector("#deadpool").addEventListener("mouseover", () => {
+        let node = document.createElement("div")
+        let parentNode = document.querySelector("#background")
+        node.setAttribute("id", "msg")
+        node.innerText = "Welcome to Deadpool Chat"
+        parentNode.append(node);
+        })
+
+        document.querySelector("#deadpool").addEventListener("mouseout", () => {
+         let node = document.querySelector("#msg")
+         node.remove();
+        })
+    </script>
 
 </body>
 
