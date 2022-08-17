@@ -7,7 +7,7 @@ let spritelist = [];
 let spritelistheli = [];
 let spritelisttruck = [];
 let clicks = 0
-console.log("lol")
+
 
 window.addEventListener("load", () => {
     document.querySelector("form").onsubmit = function () {
@@ -113,7 +113,7 @@ class Helicopter {
         this.node = document.querySelector("#" + id)
         this.height = 100;
         this.distance = 1750;
-        this.speed = 1;
+        this.speed = 3;
     }
 
     helicopter() {
@@ -131,14 +131,15 @@ class Helicopter {
         this.distance -= this.speed
         let node = document.querySelector("#helico")
         node.style.left = this.distance + "px"
+        console.log(this.distance)
 
-
-        if (this.distance == 0) {
-            this.distance = 1750;
-            this.height = (Math.random() * 150)
-            let node1 = document.querySelector("#helico")
-            node1.style.top = this.height + "px"
-
+        if (this.distance < -190) {
+            this.speed = -this.speed
+            node.style.transform = "scaleX(-1)"
+        }
+        if (this.distance > screen.width+190){
+            this.speed = -this.speed
+            node.style.transform = "scaleX(1)"
         }
 
     }

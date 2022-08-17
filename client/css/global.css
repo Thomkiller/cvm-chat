@@ -10,6 +10,7 @@
     height: 100vh;
     width: 100vw;
     display: block;
+    overflow: hidden;
     
 }
 
@@ -259,4 +260,16 @@ padding-bottom: 10%;
     font-weight: bold;
     font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
     top: 0px
+}
+
+#api-message{
+    color: red;
+    text-align: center;
+    font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+    padding: 10px; 
+    margin: auto;
+    margin-top: 5px ;
+    border-radius:20px;
+    font-weight: bold;
+    
 }
