@@ -34,25 +34,6 @@
     </form>
     
 
-    <script>
-
-        let destroyedbuilding = 0;
-    
-
-        document.querySelector("#deadpool").addEventListener("mouseover", () => {
-        let node = document.createElement("div")
-        let parentNode = document.querySelector(".sign-in-input-group")
-        node.setAttribute("id", "msg")
-        node.innerText = "Bienvenue sur le chat de Deadpool! \n Entrez votre mot de passe et nom d'utilisateur"
-        parentNode.prepend(node);
-        })
-
-        document.querySelector("#deadpool").addEventListener("mouseout", () => {
-         let node = document.querySelector("#msg")
-         node.remove();
-        })
-    </script>
-
 </body>
 
 </html>

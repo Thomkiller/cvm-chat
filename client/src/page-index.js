@@ -12,6 +12,19 @@ window.addEventListener("load", () => {
         return signin(this);
     }
 
+document.querySelector("#deadpool").addEventListener("mouseover", () => {
+    let node = document.createElement("div")
+    let parentNode = document.querySelector(".sign-in-input-group")
+    node.setAttribute("id", "msg")
+    node.innerText = "Bienvenue sur le chat de Deadpool! \n Entrez votre mot de passe et nom d'utilisateur"
+    parentNode.prepend(node);
+    })
+
+    document.querySelector("#deadpool").addEventListener("mouseout", () => {
+        let node = document.querySelector("#msg")
+        node.remove();
+       })
+
 });
 
 window.addEventListener("click", () => {
@@ -38,6 +51,8 @@ window.addEventListener("click", () => {
 
 
 })
+
+
 
 const bougerHeli = () => {
     spritelistheli[0].move();
@@ -121,7 +136,7 @@ class Firetruck {
 
     constructor(id){
         this.node = document.querySelector("#" + id)
-        this.height = 820;
+        this.height = 890;
         this.distance = 1750;
         this.speed = 2;
     }
