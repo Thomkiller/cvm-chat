@@ -162,6 +162,7 @@ padding-right: 40px;
     padding: 20px;
     border-radius: 40px;
     border: black 4px solid;
+    text-align: center;
 }
 
 .bouton-enr{
@@ -249,4 +250,13 @@ padding-bottom: 10%;
 
 #homme-invisible-5{
     position: absolute;
+}
+
+#texte{
+    position: absolute;
+    font-size:xx-large;
+    color: azure;
+    font-weight: bold;
+    font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+    top: 0px
 }

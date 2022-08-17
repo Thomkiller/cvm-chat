@@ -1,6 +1,8 @@
 import {
     signin
 } from './chat-api';
+
+
 let spritelist = [];
 let spritelistheli = [];
 let spritelisttruck = [];
