@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
     }
 
     let node = document.createElement("div")
-    node.innerText = "Nombre d'homme invisible trouvé : " + compteur
+    node.innerText = "Nombre de licorne invisible trouvé : " + compteur
     node.setAttribute("id","texte")
     let parentNode = document.querySelector("#background")
     parentNode.append(node);
@@ -27,7 +27,7 @@ window.addEventListener("load", () => {
             let node = document.createElement("div")
             let parentNode = document.querySelector("#background")
             node.setAttribute("class", "homme")
-            node.innerText = "Trouver les hommes invisibles dans la pièce et \n cliquer pour les faire courir"
+            node.innerText = "Trouver les licornes invisibles dans la pièce et \n cliquer pour les faire courir"
             parentNode.append(node);
 
         }
@@ -58,42 +58,42 @@ window.addEventListener("load", () => {
 
     document.querySelector("#homme-invisible-0").addEventListener("click", () => {
         compteur++;
-        document.querySelector("#texte").innerText = "Nombre d'homme invisible trouvé : " + compteur
+        document.querySelector("#texte").innerText = "Nombre de licorne invisible trouvé :" + compteur
         moveHomme();
 
     })
 
     document.querySelector("#homme-invisible-1").addEventListener("click", () => {
         compteur++;
-        document.querySelector("#texte").innerText = "Nombre d'homme invisible trouvé : " + compteur
+        document.querySelector("#texte").innerText = "Nombre de licorne invisible trouvé : " + compteur
         moveHomme1();
 
     })
 
     document.querySelector("#homme-invisible-2").addEventListener("click", () => {
         compteur++;
-        document.querySelector("#texte").innerText = "Nombre d'homme invisible trouvé : " + compteur
+        document.querySelector("#texte").innerText = "Nombre de licorne invisible trouvé : " + compteur
         moveHomme2();
 
     })
 
     document.querySelector("#homme-invisible-3").addEventListener("click", () => {
         compteur++;
-        document.querySelector("#texte").innerText = "Nombre d'homme invisible trouvé : " + compteur
+        document.querySelector("#texte").innerText = "Nombre de licorne invisible trouvé : " + compteur
         moveHomme3();
 
     })
 
     document.querySelector("#homme-invisible-4").addEventListener("click", () => {
         compteur++;
-        document.querySelector("#texte").innerText = "Nombre d'homme invisible trouvé : " + compteur
+        document.querySelector("#texte").innerText = "Nombre de licorne invisible trouvé  : " + compteur
         moveHomme4();
 
     })
 
     document.querySelector("#homme-invisible-5").addEventListener("click", () => {
         compteur++;
-        document.querySelector("#texte").innerText = "Nombre d'homme invisible trouvé : " + compteur
+        document.querySelector("#texte").innerText = "Nombre de licorne invisible trouvé : " + compteur
         moveHomme5();
 
     })
@@ -147,7 +147,7 @@ class Homme {
         this.distancex = (Math.random() * 900) + 500
         this.opacity = 0
         this.speed = 0.0025
-        this.negativespeed = -0.8
+        this.negativespeed = -0.5
         this.distancey = (Math.random() * 800)
 
 
@@ -155,7 +155,7 @@ class Homme {
 
     createHomme(val) {
         let node = document.createElement("img")
-        node.src = "/client/img/homme-invisible.png"
+        node.src = "/client/img/Licorne.png"
         node.setAttribute("id", "homme-invisible-" + val)
         let parentNode = document.querySelector("#background")
         parentNode.append(node)
@@ -183,7 +183,7 @@ class Homme {
             node3.style.opacity = this.opacity;
             node4.style.opacity = this.opacity;
             node5.style.opacity = this.opacity;
-        } else if (this.opacity > 0.6) {
+        } if (this.opacity > 0.3) {
             this.opacity += this.negativespeed
             let node = document.querySelector("#homme-invisible-0")
             let node1 = document.querySelector("#homme-invisible-1")

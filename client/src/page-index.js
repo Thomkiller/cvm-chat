@@ -14,18 +14,31 @@ window.addEventListener("load", () => {
         return signin(this);
     }
 
-document.querySelector("#deadpool").addEventListener("mouseover", () => {
+document.querySelector("#name").addEventListener("focus", () => {
     let node = document.createElement("div")
     let parentNode = document.querySelector(".sign-in-input-group")
     node.setAttribute("id", "msg")
-    node.innerText = "Bienvenue sur le chat de Deadpool! \n Entrez votre mot de passe et nom d'utilisateur"
+    node.innerText = "Bienvenue sur le chat de Deadpool! \n Entrez votre nom d'utilisateur!"
     parentNode.prepend(node);
     })
 
-    document.querySelector("#deadpool").addEventListener("mouseout", () => {
+    document.querySelector("#name").addEventListener("blur", () => {
         let node = document.querySelector("#msg")
         node.remove();
        })
+
+       document.querySelector("#password").addEventListener("focus", () => {
+        let node = document.createElement("div")
+        let parentNode = document.querySelector(".sign-in-input-group")
+        node.setAttribute("id", "msg")
+        node.innerText = "Bienvenue sur le chat de Deadpool! \n Entrez votre mot de passe!"
+        parentNode.prepend(node);
+        })
+
+        document.querySelector("#password").addEventListener("blur", () => {
+            let node = document.querySelector("#msg")
+            node.remove();
+           })
 
 });
 
