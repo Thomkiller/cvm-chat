@@ -17,6 +17,7 @@
 .background-enregistrement{
 background-image: url("/client/img/maison3.jpg");
 background-size: 100vw 100vh; 
+overflow: hidden;
 }
 
 .container-enregistrement{

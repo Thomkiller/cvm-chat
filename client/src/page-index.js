@@ -113,7 +113,7 @@ class Helicopter {
         this.node = document.querySelector("#" + id)
         this.height = 100;
         this.distance = 1750;
-        this.speed = 3;
+        this.speed = 2.8;
     }
 
     helicopter() {
