@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chat</title>
-        <link rel="stylesheet" href="css/global.css">
-        <script src="/dist/chat.js"></script>
-        <link rel="icon" href="img/favicon.png" type="image/png" />
-    </head>
-    <body class="background-chat">
-		<div id="vue-container"></div>
-        <a href="javascript:void(0)" id="sign-out-btn">Déconnexion</a>
 
-        <div>
-            <textarea cols="30" rows="10"></textarea>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="css/global.css">
+    <script src="../dist/chat.js"></script>
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+</head>
+
+<body class="background-chat">
+    <div id="vue-container">
+
+    </div>
+    <div class="boite-ecriture">
+        <div class="boite-texte">
+            <textarea id="texte-chat" cols="100" rows="10"></textarea>
         </div>
-    </body>
+        <a  href="javascript:void(0)" id="sign-out-btn">Déconnexion</a>
+    </div>
+
+</body>
+
 </html>

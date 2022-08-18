@@ -95,7 +95,7 @@ class Fire {
     }
     fire() {
         let node1 = document.createElement("img")
-        node1.src = "/client/img/Explosion.png"
+        node1.src = "./img/Explosion.png"
         node1.setAttribute("id", "fire")
         let parentNode = document.querySelector("#background")
         parentNode.append(node1)
@@ -118,7 +118,7 @@ class Helicopter {
 
     helicopter() {
         let node = document.createElement("img")
-        node.src = "/client/img/helico2.gif"
+        node.src = "./img/helico2.gif"
         node.setAttribute("id", "helico")
         let parentNode = document.querySelector("#background")
         parentNode.append(node)
@@ -159,7 +159,7 @@ class Firetruck {
 
     fireTruck(){
         let node = document.createElement("img")
-        node.src = "/client/img/fireTruck2.png"
+        node.src = "./img/fireTruck2.png"
         node.setAttribute("id", "firetruck")
         let parentNode = document.querySelector("#background")
         parentNode.append(node)
