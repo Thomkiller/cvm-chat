@@ -155,7 +155,7 @@ class Homme {
 
     createHomme(val) {
         let node = document.createElement("img")
-        node.src = "/client/img/Licorne.png"
+        node.src = "./img/Licorne.png"
         node.setAttribute("id", "homme-invisible-" + val)
         let parentNode = document.querySelector("#background")
         parentNode.append(node)
