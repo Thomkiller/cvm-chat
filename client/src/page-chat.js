@@ -1,6 +1,6 @@
 import {registerCallbacks, sendMessage, signout, chatMessageLoop} from './chat-api';
 import {createApp} from 'vue'
-import App from "/Web-2/Projet Final/cvm-chat/client/src/App.vue"
+import App from "../src/App.vue"
 let root
 window.addEventListener("load", () => {
     document.querySelector("textarea").onkeyup = function (evt) {
@@ -14,14 +14,14 @@ window.addEventListener("load", () => {
 
   
 
-    newMessage();
+    
 memberListUpdate();
 })
 
 // Lorsqu'un nouveau message doit être affiché à l'écran, cette fonction est appelée
 const newMessage = (fromUser, message, isPrivate) => {
    console.log(fromUser, message, isPrivate)
-   root.addchat("allo world",message);
+   root.addchat(fromUser,message);
 
 }
 
@@ -29,4 +29,5 @@ const newMessage = (fromUser, message, isPrivate) => {
 // connectés dans votre interface.
 const memberListUpdate = members => {
     console.log(members);
+    root.addguestlist(members)
 }
