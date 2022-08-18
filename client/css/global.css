@@ -158,7 +158,7 @@ padding-right: 40px;
     font-size: larger;
     font-weight: bold;
     position: absolute;
-    top: 400px;
+    top: 350px;
     left: 850px;
     background-color: sandybrown;
     padding: 20px;
@@ -223,8 +223,8 @@ padding-bottom: 10%;
 
 .div-invisible{
     position: absolute;
-    top: 495px;
-    left: 1000px;
+    top: 460px;
+    left: 780px;
     height: 200px;
     width: 200px;
     

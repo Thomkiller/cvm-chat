@@ -152,7 +152,7 @@ class Firetruck {
 
     constructor(id){
         this.node = document.querySelector("#" + id)
-        this.height = 890;
+        this.height = 830;
         this.distance = 1750;
         this.speed = 2;
     }
