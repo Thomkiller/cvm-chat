@@ -324,3 +324,25 @@ opacity: 1;
     border: black solid 6px;
     color: black;
 }
+
+#deadpool2{
+    position: absolute;
+    height: 300px;
+    left : 900px;
+    top: 450px
+}
+
+#deadpooljoke{
+position: absolute;
+border: black solid 2px;
+left: 1150px;
+top: 500px;
+background-color: white;
+font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+font-weight: bold;
+color: black;
+padding: 25px;
+border-radius: 30px;
+font-size: larger;
+
+}

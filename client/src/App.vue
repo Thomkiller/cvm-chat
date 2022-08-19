@@ -10,8 +10,8 @@
         <div class="conteneur-list">
              <h3>Membres actifs</h3>
             <div v-for="(memb,index) in this.guestlist" :key="index">  {{memb.membres}}</div>
-           
         </div>
+        
     </div>
 </template>
 
