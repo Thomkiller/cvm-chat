@@ -44,7 +44,10 @@ Les informations concernant la remise du projet se trouvent ici : [https://notes
 
 ## Animations et événement dans le projet
 
-###Page 1
+
+
+
+##Page 1
 Événement onclick sur le background qui créer du feux avec un randomizer sur la grandeur et la position de celui-ci. Fait avec DOM.
 Événement onFocus sur input de Mot de passe et utilisateur qui fait apparaitre un message qui dit de rentrer le mot de passe. Fait avec DOM.
 Événement onBlur enlève le message.
